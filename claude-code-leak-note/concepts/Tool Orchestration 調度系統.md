@@ -110,6 +110,24 @@ gantt
 > [!info] 錯誤即 Feedback
 > 錯誤不會中斷 Agent Loop，而是作為 tool_result 回注到對話中，讓模型從錯誤中學習並調整策略。這是 [[Agent Loop 核心執行機制|Agent Loop]] feedback loop 的重要組成部分。
 
+## 🔬 最小實作參考（claw-code）
+
+> [!example] claw-code 最小骨幹 — ToolPool
+> 來源：`claw-code/src/tool_pool.py`（~38 行）
+
+![[tool-pool-implementation#^code-core]]
+
+**為什麼這個 stub 能闡明本概念**：
+`ToolPool` 將工具編排的第一步——「這次對話可以用哪些工具」——封裝為一個不可變快照。`assemble_tool_pool()` 工廠函式展示了「配置 → 組裝 → 凍結」的設計模式：先決定參數，一次性組裝，之後不再修改。這是理解完整 Orchestration 的起點。
+
+**本概念的 stub 未呈現的**：
+- 並行/串行執行策略（`Promise.all` vs sequential）
+- 7 層安全防護管道
+- Pre/Post Hook 擴展機制
+- 工具依賴解析與執行順序決策
+
+→ 完整程式碼走讀 + 差距分析：[[tool-pool-implementation]]
+
 ## 關聯筆記
 
 - [[Agent Loop 核心執行機制]] — Tool Orchestration 是 Agent Loop 的「執行」階段
@@ -117,6 +135,7 @@ gantt
 - [[七層縱深防禦模型]] — 安全層面的工具保護
 - [[並行與 Async Generator 模式]] — 並行策略的設計模式
 - [[Harness Engineering 12 原則]] — 原則 2（多層工具執行管道）
+- [[tool-pool-implementation]] — ToolPool 完整實作筆記
 
 ---
 

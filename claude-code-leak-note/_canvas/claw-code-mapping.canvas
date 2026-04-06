@@ -1,0 +1,221 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 400,
+      "y": -200,
+      "width": 400,
+      "height": 80,
+      "text": "# claw-code ↔ Concepts ↔ Claude Code TS\n三向對照視覺地圖"
+    },
+
+    {
+      "id": "header-left",
+      "type": "text",
+      "x": -50,
+      "y": -80,
+      "width": 250,
+      "height": 50,
+      "color": "6",
+      "text": "### 🐍 claw-code (Python)"
+    },
+    {
+      "id": "header-mid",
+      "type": "text",
+      "x": 400,
+      "y": -80,
+      "width": 250,
+      "height": 50,
+      "color": "4",
+      "text": "### 📝 Concept Notes"
+    },
+    {
+      "id": "header-right",
+      "type": "text",
+      "x": 850,
+      "y": -80,
+      "width": 280,
+      "height": 50,
+      "color": "1",
+      "text": "### 📘 Claude Code (TypeScript)"
+    },
+
+    {
+      "id": "group-harness",
+      "type": "text",
+      "x": -150,
+      "y": 0,
+      "width": 1350,
+      "height": 50,
+      "color": "4",
+      "text": "## 🟢 Harness Engineering"
+    },
+
+    {
+      "id": "py-runtime",
+      "type": "text",
+      "x": -50,
+      "y": 80,
+      "width": 250,
+      "height": 60,
+      "color": "4",
+      "text": "`src/runtime.py`\nPortRuntime — 200 行"
+    },
+    {
+      "id": "concept-agentloop",
+      "type": "file",
+      "x": 400,
+      "y": 80,
+      "width": 250,
+      "height": 60,
+      "file": "concepts/Agent Loop 核心執行機制.md"
+    },
+    {
+      "id": "ts-main",
+      "type": "text",
+      "x": 850,
+      "y": 80,
+      "width": 280,
+      "height": 60,
+      "color": "1",
+      "text": "`src/main.tsx`\n4683 行 — Agent Loop 主入口"
+    },
+
+    {
+      "id": "py-queryengine",
+      "type": "text",
+      "x": -50,
+      "y": 170,
+      "width": 250,
+      "height": 60,
+      "color": "4",
+      "text": "`src/query_engine.py`\nQueryEnginePort — 180 行"
+    },
+    {
+      "id": "ts-claude",
+      "type": "text",
+      "x": 850,
+      "y": 170,
+      "width": 280,
+      "height": 60,
+      "color": "1",
+      "text": "`src/services/api/claude.ts`\n3419 行 — API 呼叫層"
+    },
+
+    {
+      "id": "group-tool",
+      "type": "text",
+      "x": -150,
+      "y": 280,
+      "width": 1350,
+      "height": 50,
+      "color": "6",
+      "text": "## 🔵 Tool System"
+    },
+
+    {
+      "id": "py-tool",
+      "type": "text",
+      "x": -50,
+      "y": 360,
+      "width": 250,
+      "height": 60,
+      "color": "6",
+      "text": "`src/Tool.py`\nToolDefinition — 15 行"
+    },
+    {
+      "id": "concept-tools",
+      "type": "file",
+      "x": 400,
+      "y": 360,
+      "width": 250,
+      "height": 60,
+      "file": "concepts/36 工具系統總覽.md"
+    },
+    {
+      "id": "ts-tools-dir",
+      "type": "text",
+      "x": 850,
+      "y": 360,
+      "width": 280,
+      "height": 60,
+      "color": "1",
+      "text": "`src/tools/`\n36 個工具定義目錄"
+    },
+
+    {
+      "id": "py-tools",
+      "type": "text",
+      "x": -50,
+      "y": 450,
+      "width": 250,
+      "height": 60,
+      "color": "6",
+      "text": "`src/tools.py`\nTools Registry — 90 行"
+    },
+    {
+      "id": "ts-toolexec",
+      "type": "text",
+      "x": 850,
+      "y": 450,
+      "width": 280,
+      "height": 60,
+      "color": "1",
+      "text": "`src/services/tools/toolExecution.ts`\n1745 行"
+    },
+
+    {
+      "id": "py-toolpool",
+      "type": "text",
+      "x": -50,
+      "y": 540,
+      "width": 250,
+      "height": 60,
+      "color": "6",
+      "text": "`src/tool_pool.py`\nToolPool — 38 行"
+    },
+    {
+      "id": "concept-toolorch",
+      "type": "file",
+      "x": 400,
+      "y": 540,
+      "width": 250,
+      "height": 60,
+      "file": "concepts/Tool Orchestration 調度系統.md"
+    },
+    {
+      "id": "ts-toolorch",
+      "type": "text",
+      "x": 850,
+      "y": 540,
+      "width": 280,
+      "height": 60,
+      "color": "1",
+      "text": "`src/services/tools/toolOrchestration.ts`"
+    },
+
+    {
+      "id": "impl-note",
+      "type": "text",
+      "x": 300,
+      "y": 660,
+      "width": 450,
+      "height": 80,
+      "color": "3",
+      "text": "→ 完整實作筆記索引：[[Implementation Reference MOC]]\n→ 對照表：[[claw-code 模組對照表]]"
+    }
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "py-runtime", "toNode": "concept-agentloop", "fromSide": "right", "toSide": "left", "label": "illustrates"},
+    {"id": "e2", "fromNode": "concept-agentloop", "toNode": "ts-main", "fromSide": "right", "toSide": "left", "label": "documents"},
+    {"id": "e3", "fromNode": "py-queryengine", "toNode": "concept-agentloop", "fromSide": "right", "toSide": "left", "label": "illustrates"},
+    {"id": "e4", "fromNode": "concept-agentloop", "toNode": "ts-claude", "fromSide": "right", "toSide": "left", "label": "documents"},
+    {"id": "e5", "fromNode": "py-tool", "toNode": "concept-tools", "fromSide": "right", "toSide": "left", "label": "illustrates"},
+    {"id": "e6", "fromNode": "concept-tools", "toNode": "ts-tools-dir", "fromSide": "right", "toSide": "left", "label": "documents"},
+    {"id": "e7", "fromNode": "py-tools", "toNode": "concept-tools", "fromSide": "right", "toSide": "left", "label": "illustrates"},
+    {"id": "e8", "fromNode": "concept-tools", "toNode": "ts-toolexec", "fromSide": "right", "toSide": "left", "label": "documents"},
+    {"id": "e9", "fromNode": "py-toolpool", "toNode": "concept-toolorch", "fromSide": "right", "toSide": "left", "label": "illustrates"},
+    {"id": "e10", "fromNode": "concept-toolorch", "toNode": "ts-toolorch", "fromSide": "right", "toSide": "left", "label": "documents"}
+  ]
+}

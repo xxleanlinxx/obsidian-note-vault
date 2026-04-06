@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "x": 400,
+      "y": 300,
+      "width": 300,
+      "height": 80,
+      "color": "5",
+      "file": "_MOC/Claude Code 逆向工程知識庫.md"
+    },
+
+    {
+      "id": "moc-harness",
+      "type": "file",
+      "x": 0,
+      "y": 0,
+      "width": 260,
+      "height": 60,
+      "color": "4",
+      "file": "_MOC/Harness Engineering MOC.md"
+    },
+    {
+      "id": "moc-prompt",
+      "type": "file",
+      "x": 320,
+      "y": -60,
+      "width": 260,
+      "height": 60,
+      "color": "2",
+      "file": "_MOC/Prompt Engineering MOC.md"
+    },
+    {
+      "id": "moc-tool",
+      "type": "file",
+      "x": 640,
+      "y": 0,
+      "width": 260,
+      "height": 60,
+      "color": "6",
+      "file": "_MOC/Tool System MOC.md"
+    },
+    {
+      "id": "moc-agent",
+      "type": "file",
+      "x": 820,
+      "y": 200,
+      "width": 260,
+      "height": 60,
+      "color": "3",
+      "file": "_MOC/Agent Architecture MOC.md"
+    },
+    {
+      "id": "moc-security",
+      "type": "file",
+      "x": 780,
+      "y": 460,
+      "width": 260,
+      "height": 60,
+      "color": "1",
+      "file": "_MOC/Security & Permissions MOC.md"
+    },
+    {
+      "id": "moc-memory",
+      "type": "file",
+      "x": 320,
+      "y": 580,
+      "width": 260,
+      "height": 60,
+      "color": "4",
+      "file": "_MOC/Memory & Context MOC.md"
+    },
+    {
+      "id": "moc-cost",
+      "type": "file",
+      "x": -40,
+      "y": 460,
+      "width": 260,
+      "height": 60,
+      "color": "2",
+      "file": "_MOC/Cost Engineering MOC.md"
+    },
+    {
+      "id": "moc-impl",
+      "type": "file",
+      "x": -80,
+      "y": 200,
+      "width": 280,
+      "height": 60,
+      "color": "5",
+      "file": "_MOC/Implementation Reference MOC.md"
+    },
+
+    {
+      "id": "concept-agentloop",
+      "type": "file",
+      "x": -200,
+      "y": -100,
+      "width": 250,
+      "height": 50,
+      "file": "concepts/Agent Loop 核心執行機制.md"
+    },
+    {
+      "id": "concept-context",
+      "type": "file",
+      "x": 100,
+      "y": -140,
+      "width": 260,
+      "height": 50,
+      "file": "concepts/Context Engineering 多層管道.md"
+    },
+    {
+      "id": "concept-sysprompt",
+      "type": "file",
+      "x": 420,
+      "y": -180,
+      "width": 280,
+      "height": 50,
+      "file": "concepts/System Prompt 動態組裝邏輯.md"
+    },
+    {
+      "id": "concept-36tools",
+      "type": "file",
+      "x": 700,
+      "y": -100,
+      "width": 230,
+      "height": 50,
+      "file": "concepts/36 工具系統總覽.md"
+    },
+    {
+      "id": "concept-bashtool",
+      "type": "file",
+      "x": 920,
+      "y": -20,
+      "width": 230,
+      "height": 50,
+      "file": "concepts/BashTool 深度剖析.md"
+    },
+    {
+      "id": "concept-3layer",
+      "type": "file",
+      "x": 960,
+      "y": 120,
+      "width": 260,
+      "height": 50,
+      "file": "concepts/Agent 系統三層架構.md"
+    },
+    {
+      "id": "concept-7layer",
+      "type": "file",
+      "x": 940,
+      "y": 380,
+      "width": 240,
+      "height": 50,
+      "file": "concepts/七層縱深防禦模型.md"
+    },
+    {
+      "id": "concept-memory5",
+      "type": "file",
+      "x": 480,
+      "y": 660,
+      "width": 260,
+      "height": 50,
+      "file": "concepts/Memory 五大子系統架構.md"
+    },
+    {
+      "id": "concept-cost",
+      "type": "file",
+      "x": 40,
+      "y": 580,
+      "width": 220,
+      "height": 50,
+      "file": "concepts/成本追蹤架構.md"
+    },
+    {
+      "id": "concept-bootstrap",
+      "type": "file",
+      "x": -260,
+      "y": 80,
+      "width": 280,
+      "height": 50,
+      "file": "concepts/Bootstrap 啟動流程與生命週期.md"
+    },
+
+    {
+      "id": "pattern-harness12",
+      "type": "file",
+      "x": -300,
+      "y": -20,
+      "width": 280,
+      "height": 50,
+      "color": "3",
+      "file": "patterns/Harness Engineering 12 原則.md"
+    },
+    {
+      "id": "pattern-cache",
+      "type": "file",
+      "x": -200,
+      "y": 380,
+      "width": 260,
+      "height": 50,
+      "color": "3",
+      "file": "patterns/Cache 穩定性工程模式.md"
+    },
+
+    {
+      "id": "ref-mapping",
+      "type": "file",
+      "x": -260,
+      "y": 280,
+      "width": 260,
+      "height": 50,
+      "color": "5",
+      "file": "references/claw-code 模組對照表.md"
+    }
+  ],
+  "edges": [
+    {"id": "h1", "fromNode": "home", "toNode": "moc-harness", "fromSide": "top", "toSide": "bottom", "label": ""},
+    {"id": "h2", "fromNode": "home", "toNode": "moc-prompt", "fromSide": "top", "toSide": "bottom", "label": ""},
+    {"id": "h3", "fromNode": "home", "toNode": "moc-tool", "fromSide": "top", "toSide": "bottom", "label": ""},
+    {"id": "h4", "fromNode": "home", "toNode": "moc-agent", "fromSide": "right", "toSide": "left", "label": ""},
+    {"id": "h5", "fromNode": "home", "toNode": "moc-security", "fromSide": "right", "toSide": "left", "label": ""},
+    {"id": "h6", "fromNode": "home", "toNode": "moc-memory", "fromSide": "bottom", "toSide": "top", "label": ""},
+    {"id": "h7", "fromNode": "home", "toNode": "moc-cost", "fromSide": "left", "toSide": "right", "label": ""},
+    {"id": "h8", "fromNode": "home", "toNode": "moc-impl", "fromSide": "left", "toSide": "right", "label": ""},
+
+    {"id": "c1", "fromNode": "moc-harness", "toNode": "concept-agentloop", "fromSide": "top", "toSide": "bottom", "label": ""},
+    {"id": "c2", "fromNode": "moc-harness", "toNode": "concept-context", "fromSide": "top", "toSide": "bottom", "label": ""},
+    {"id": "c3", "fromNode": "moc-harness", "toNode": "concept-bootstrap", "fromSide": "left", "toSide": "right", "label": ""},
+    {"id": "c4", "fromNode": "moc-prompt", "toNode": "concept-sysprompt", "fromSide": "top", "toSide": "bottom", "label": ""},
+    {"id": "c5", "fromNode": "moc-tool", "toNode": "concept-36tools", "fromSide": "top", "toSide": "bottom", "label": ""},
+    {"id": "c6", "fromNode": "moc-tool", "toNode": "concept-bashtool", "fromSide": "right", "toSide": "left", "label": ""},
+    {"id": "c7", "fromNode": "moc-agent", "toNode": "concept-3layer", "fromSide": "right", "toSide": "left", "label": ""},
+    {"id": "c8", "fromNode": "moc-security", "toNode": "concept-7layer", "fromSide": "right", "toSide": "left", "label": ""},
+    {"id": "c9", "fromNode": "moc-memory", "toNode": "concept-memory5", "fromSide": "right", "toSide": "left", "label": ""},
+    {"id": "c10", "fromNode": "moc-cost", "toNode": "concept-cost", "fromSide": "bottom", "toSide": "top", "label": ""},
+
+    {"id": "p1", "fromNode": "moc-harness", "toNode": "pattern-harness12", "fromSide": "left", "toSide": "right", "color": "3", "label": "pattern"},
+    {"id": "p2", "fromNode": "moc-cost", "toNode": "pattern-cache", "fromSide": "left", "toSide": "right", "color": "3", "label": "pattern"},
+
+    {"id": "r1", "fromNode": "moc-impl", "toNode": "ref-mapping", "fromSide": "bottom", "toSide": "top", "color": "5", "label": "reference"},
+
+    {"id": "x1", "fromNode": "concept-context", "toNode": "concept-sysprompt", "fromSide": "right", "toSide": "left", "color": "2", "label": "feeds into"},
+    {"id": "x2", "fromNode": "concept-agentloop", "toNode": "concept-context", "fromSide": "right", "toSide": "left", "color": "4", "label": "uses"},
+    {"id": "x3", "fromNode": "concept-7layer", "toNode": "concept-bashtool", "fromSide": "top", "toSide": "bottom", "color": "1", "label": "protects"}
+  ]
+}
